@@ -41,7 +41,7 @@ public class Main {
         System.out.println("Пробуем подключиться через Proxy " + ip + ":" + port);
         try {
             Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(ip, port));
-            URL url = new URL("https://vozzhaev.ru/test.php");
+            URL url = new URL("https://vozhzhaev.ru/test.php");
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection(proxy);
             InputStream is = urlConnection.getInputStream();
             BufferedReader rd = new BufferedReader((new InputStreamReader(is)));
