@@ -18,7 +18,7 @@ public class Main {
                     int port = Integer.parseInt(resultIpArray[1]);
                     if (checkProxy(ip, port)){
                         j++;
-                        String str = ip + ":" + port + String.valueOf(new char[]{10,13});
+                        String str = ip + ":" + port + "\n";
                         byte[] buffer = str.getBytes();
                         fos.write(buffer);
                         System.out.println("Найден рабочий proxy " + resultIp);
