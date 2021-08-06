@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         try {
-            FileInputStream fis = new FileInputStream("D://java/ip-port.txt");
+            FileInputStream fis = new FileInputStream("D://java/ip.txt");
             FileOutputStream fos = new FileOutputStream("D://java/good_ip.txt", true);
             int i, j=0;
             String resultIp = "";
