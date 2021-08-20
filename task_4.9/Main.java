@@ -9,7 +9,7 @@ public class Main {
                 new Person("Василий", "Пупкин", 28, null, null),
                 new Person("Алексей", "Иванов", 15, null, null),
                 new Person("Николай", "Иванов", 20, null, null),
-                new Person("Инокентий", "Петров", 48, null, null),
+                new Person("Иннокентий", "Петров", 48, null, null),
                 new Person("Лариса", "Иванова", 38, null, null),
                 new Person("Сергей", "Иванов", 41, null, null),
                 new Person("Анна", "Петрова", 45, null, null),
