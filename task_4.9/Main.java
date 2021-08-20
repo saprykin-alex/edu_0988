@@ -17,7 +17,9 @@ public class Main {
                 new Person("Алексей", "Петров", 72, null, null),
                 new Person("Наталья", "Свиридова", 68, null, null),
                 new Person("Светлана", "Васильева", 65, null, null),
-                new Person("Николай", "Васильев", 70, null, null)
+                new Person("Николай", "Васильев", 70, null, null),
+                new Person("Владимир", "Сидоров", 17, null, null),
+
         };
         persons[0].mother = persons[8];
         persons[0].father = persons[5];
@@ -66,31 +68,36 @@ class Person{
 
     void info(){
 
-        System.out.println("Привет! Меня зовут " +this.name+" "+this.lastname+". Мне "+this.age+".");
-        if (this.mother!=null)
-            System.out.println("Мою маму зовут " +this.mother.name+" "+this.mother.lastname+". Ей "+this.mother.age+".");
-        else
-            System.out.println("У меня нет матери.");
-        if (this.father!=null)
-            System.out.println("Моего папу зовут " +this.father.name+" "+this.father.lastname+". Ему "+this.father.age+".");
-        else
-            System.out.println("У меня нет отца.");
-        if (this.mother.mother!=null)
-            System.out.println("Мою бабушку со стороны матери зовут " +this.mother.mother.name+" "+this.mother.mother.lastname+". Ей "+this.mother.mother.age+".");
-        else
-            System.out.println("У меня нет бабушки со стороны матери.");
-        if (this.mother.father!=null)
-            System.out.println("Моего дедушку со стороны матери зовут " +this.mother.father.name+" "+this.mother.father.lastname+". Ему "+this.mother.father.age+".");
-        else
-            System.out.println("У меня нет дедушки со стороны матери.");
-        if (this.father.mother!=null)
-            System.out.println("Мою бабушку со стороны отца зовут " +this.father.mother.name+" "+this.father.mother.lastname+". Ей "+this.father.mother.age+".");
-        else
-            System.out.println("У меня нет бабушки со стороны отца.");
-        if (this.father.father!=null)
-            System.out.println("Моего дедушку со стороны отца зовут " +this.father.father.name+" "+this.father.father.lastname+". Ему "+this.father.father.age+".");
-        else
-            System.out.println("У меня нет дедушки со стороны отца.");
+        try {
 
+    System.out.println("Привет! Меня зовут " + this.name + " " + this.lastname + ". Мне " + this.age + ".");
+    if (this.mother != null)
+        System.out.println("Мою маму зовут " + this.mother.name + " " + this.mother.lastname + ". Ей " + this.mother.age + ".");
+    else
+        System.out.println("У меня нет матери.");
+    if (this.father != null)
+        System.out.println("Моего папу зовут " + this.father.name + " " + this.father.lastname + ". Ему " + this.father.age + ".");
+    else
+        System.out.println("У меня нет отца.");
+    if (this.mother.mother != null)
+        System.out.println("Мою бабушку со стороны матери зовут " + this.mother.mother.name + " " + this.mother.mother.lastname + ". Ей " + this.mother.mother.age + ".");
+    else
+        System.out.println("У меня нет бабушки со стороны матери.");
+    if (this.mother.father != null)
+        System.out.println("Моего дедушку со стороны матери зовут " + this.mother.father.name + " " + this.mother.father.lastname + ". Ему " + this.mother.father.age + ".");
+    else
+        System.out.println("У меня нет дедушки со стороны матери.");
+    if (this.father.mother != null)
+        System.out.println("Мою бабушку со стороны отца зовут " + this.father.mother.name + " " + this.father.mother.lastname + ". Ей " + this.father.mother.age + ".");
+    else
+        System.out.println("У меня нет бабушки со стороны отца.");
+    if (this.father.father != null)
+        System.out.println("Моего дедушку со стороны отца зовут " + this.father.father.name + " " + this.father.father.lastname + ". Ему " + this.father.father.age + ".");
+    else
+        System.out.println("У меня нет дедушки со стороны отца.");
+
+        }catch(Exception ex){
+
+        }
     }
 }
